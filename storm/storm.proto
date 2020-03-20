@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message SummarizeRequest {
+    string text = 1;
+}
+
+message SummarizeResponse {
+    string summary = 1;
+}
+
+service StormService {
+    rpc Summarize(SummarizeRequest) returns (SummarizeResponse);
+}

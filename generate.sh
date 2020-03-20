@@ -1,0 +1,1 @@
+protoc ./storm/storm.proto --python_out=. --go_out=plugins=grpc:.

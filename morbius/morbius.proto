@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message SentimentRequest {
+    string text = 1;
+}
+
+message SentimentResponse {
+    int32 class = 1;
+    string description = 2;
+    string text = 3;
+}
+
+service MorbiusService {
+    rpc Sentiment(SentimentRequest) returns (SentimentResponse);
+}
