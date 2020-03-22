@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\rmorbius.proto\" \n\x10SentimentRequest\x12\x0c\n\x04text\x18\x01 \x01(\t\"E\n\x11SentimentResponse\x12\r\n\x05\x63lass\x18\x01 \x01(\x05\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x0c\n\x04text\x18\x03 \x01(\t2D\n\x0eMorbiusService\x12\x32\n\tSentiment\x12\x11.SentimentRequest\x1a\x12.SentimentResponseb\x06proto3'
+  serialized_pb=b'\n\rmorbius.proto\" \n\x10SentimentRequest\x12\x0c\n\x04text\x18\x01 \x01(\t\"L\n\x11SentimentResponse\x12\x14\n\x0cmodel_result\x18\x01 \x01(\x05\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x0c\n\x04text\x18\x03 \x01(\t2D\n\x0eMorbiusService\x12\x32\n\tSentiment\x12\x11.SentimentRequest\x1a\x12.SentimentResponseb\x06proto3'
 )
 
 
@@ -63,7 +63,7 @@ _SENTIMENTRESPONSE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='class', full_name='SentimentResponse.class', index=0,
+      name='model_result', full_name='SentimentResponse.model_result', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -96,7 +96,7 @@ _SENTIMENTRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=51,
-  serialized_end=120,
+  serialized_end=127,
 )
 
 DESCRIPTOR.message_types_by_name['SentimentRequest'] = _SENTIMENTREQUEST
@@ -125,8 +125,8 @@ _MORBIUSSERVICE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=122,
-  serialized_end=190,
+  serialized_start=129,
+  serialized_end=197,
   methods=[
   _descriptor.MethodDescriptor(
     name='Sentiment',
